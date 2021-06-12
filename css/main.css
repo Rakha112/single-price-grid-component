@@ -11,11 +11,12 @@ body {
   font-size: 16px;
 }
 
-.card {
-  min-height: 100vh;
+.container {
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -23,49 +24,51 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 311px;
-  margin: auto;
 }
 
-.card .community {
+.container .card {
+  padding: 30px;
+}
+
+.container .card .community {
   border-radius: 5px 5px 0 0;
-  padding: 28px 10px 30px 25px;
+  padding: 28px 25px 30px 25px;
   background-color: white;
 }
 
-.card .community h2 {
+.container .card .community h2 {
   font-weight: bolder;
   color: #2ab2af;
   font-size: 19.5px;
   padding-bottom: 28px;
 }
 
-.card .community h3 {
+.container .card .community h3 {
   color: #c0df34;
   font-size: 14.5px;
   padding-bottom: 15px;
 }
 
-.card .community p {
+.container .card .community p {
   line-height: 2;
   color: #98a6bd;
   font-size: 13.5px;
   font-weight: 400;
 }
 
-.card .subscription {
+.container .card .subscription {
   background-color: #2ab2af;
   padding: 25px 25px 25px 25px;
 }
 
-.card .subscription h2 {
+.container .card .subscription h2 {
   font-weight: 400;
   font-size: 18.5px;
   color: white;
   padding-bottom: 18px;
 }
 
-.card .subscription h3 {
+.container .card .subscription h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,46 +81,55 @@ body {
   font-size: 16px;
 }
 
-.card .subscription h3 span {
+.container .card .subscription h3 span {
   font-weight: 700;
   padding-right: 10px;
   font-size: 31px;
 }
 
-.card .subscription p {
+.container .card .subscription p {
   font-size: 15.5px;
   font-weight: 400;
   color: white;
   padding-bottom: 28px;
 }
 
-.card .subscription a {
+.container .card .subscription a {
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #c0df34;
   border-radius: 5px;
   text-decoration: none;
   color: white;
   padding: 13.5px 100px;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
 }
 
-.card .why {
+.container .card .subscription a:hover {
+  background-color: #a2bf22;
+}
+
+.container .card .why {
   border-radius: 0 0 5px 5px;
   background-color: #4bbebc;
   padding: 25px 25px 20px 25px;
 }
 
-.card .why h2 {
+.container .card .why h2 {
   font-weight: 400;
   font-size: 18px;
   color: white;
   padding-bottom: 21px;
 }
 
-.card .why ul li {
+.container .card .why ul li {
   font-size: 13.5px;
   font-weight: 400;
   color: white;
@@ -126,8 +138,25 @@ body {
 }
 
 @media screen and (min-width: 1000px) {
-  .card {
+  body {
+    padding: 0px;
+  }
+  .container .card {
+    padding: 0px;
+    margin: auto;
+    max-height: 475px;
     max-width: 635px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2, auto);
+  }
+  .container .community {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
   }
 }
 /*# sourceMappingURL=main.css.map */
