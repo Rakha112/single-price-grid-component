@@ -51,29 +51,72 @@ body {
   line-height: 1.75;
   color: #98a6bd;
   font-size: 13px;
+  font-weight: 400;
 }
 
 .card .subscription {
-  border: 1px red solid;
   background-color: #2ab2af;
   padding: 30px 25px;
 }
 
 .card .subscription h2 {
+  font-size: 18px;
   color: white;
+  padding-bottom: 20px;
 }
 
 .card .subscription h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
+  padding-bottom: 10px;
+  font-weight: 400;
 }
 
 .card .subscription h3 span {
+  font-weight: 700;
+  padding-right: 10px;
   font-size: 2rem;
 }
 
+.card .subscription p {
+  font-weight: 400;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.card .subscription a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #c0df34;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  padding: 13.5px 100px;
+}
+
 .card .why {
-  border: 1px red solid;
+  border-radius: 0 0 5px 5px;
   background-color: #4bbebc;
-  padding: 30px 25px;
+  padding: 25px 25px;
+}
+
+.card .why h2 {
+  font-size: 18px;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.card .why ul li {
+  font-size: 13.5px;
+  font-weight: 400;
+  color: white;
+  list-style: none;
+  padding-bottom: 5px;
 }
 /*# sourceMappingURL=main.css.map */

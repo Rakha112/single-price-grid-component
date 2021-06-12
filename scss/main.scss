@@ -38,25 +38,61 @@ body {
             line-height: 1.75;
             color: $grayish-blue;
             font-size: 13px;
+            font-weight: 400;
         }
     }
     .subscription {
-        border: 1px red solid;
         background-color: $cyan;
         padding: 30px 25px;
         h2 {
+            font-size: 18px;
             color: white;
+            padding-bottom: 20px;
         }
         h3 {
+            display: flex;
+            align-items: center;
             color: white;
+            padding-bottom: 10px;
+            font-weight: 400;
             span {
+                font-weight: 700;
+                padding-right: 10px;
                 font-size: 2rem;
             }
         }
+
+        p {
+            font-weight: 400;
+            color: white;
+            padding-bottom: 30px;
+        }
+        a {
+            display: flex;
+            background-color: $bright-yellow;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            padding: 13.5px 100px;
+        }
     }
     .why {
-        border: 1px red solid;
+        border-radius: 0 0 5px 5px;
         background-color: $bg-why;
-        padding: 30px 25px;
+        padding: 25px 25px;
+        h2 {
+            font-size: 18px;
+            color: white;
+            padding-bottom: 20px;
+        }
+        ul {
+            li {
+                font-size: 13.5px;
+                font-weight: 400;
+                color: white;
+                list-style: none;
+                padding-bottom: 5px
+            }
+        }
     }
 }
