@@ -1,0 +1,62 @@
+@import "variabel";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: $light-gray;
+    font-size: 16px;
+}
+
+.card {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    max-width: 311px;
+    margin: auto;
+    .community {
+        border-radius: 5px 5px 0 0;
+        padding: 35px 25px;
+        background-color: white;
+        h2 {
+            color: $cyan;
+            font-size: 20px;
+            padding-bottom: 25px;
+        }
+        h3 {
+            color: $bright-yellow;
+            font-size: 15px;
+            padding-bottom: 20px;
+        }
+        p {
+            line-height: 1.75;
+            color: $grayish-blue;
+            font-size: 13px;
+        }
+    }
+    .subscription {
+        border: 1px red solid;
+        background-color: $cyan;
+        padding: 30px 25px;
+        h2 {
+            color: white;
+        }
+        h3 {
+            color: white;
+            span {
+                font-size: 2rem;
+            }
+        }
+    }
+    .why {
+        border: 1px red solid;
+        background-color: $bg-why;
+        padding: 30px 25px;
+    }
+}

@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: #e5eff5;
+  font-size: 16px;
+}
+
+.card {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  max-width: 311px;
+  margin: auto;
+}
+
+.card .community {
+  border-radius: 5px 5px 0 0;
+  padding: 35px 25px;
+  background-color: white;
+}
+
+.card .community h2 {
+  color: #2ab2af;
+  font-size: 20px;
+  padding-bottom: 25px;
+}
+
+.card .community h3 {
+  color: #c0df34;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+.card .community p {
+  line-height: 1.75;
+  color: #98a6bd;
+  font-size: 13px;
+}
+
+.card .subscription {
+  border: 1px red solid;
+  background-color: #2ab2af;
+  padding: 30px 25px;
+}
+
+.card .subscription h2 {
+  color: white;
+}
+
+.card .subscription h3 {
+  color: white;
+}
+
+.card .subscription h3 span {
+  font-size: 2rem;
+}
+
+.card .why {
+  border: 1px red solid;
+  background-color: #4bbebc;
+  padding: 30px 25px;
+}
+/*# sourceMappingURL=main.css.map */
