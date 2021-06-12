@@ -23,46 +23,46 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
   max-width: 311px;
   margin: auto;
 }
 
 .card .community {
   border-radius: 5px 5px 0 0;
-  padding: 35px 25px;
+  padding: 28px 10px 30px 25px;
   background-color: white;
 }
 
 .card .community h2 {
+  font-weight: bolder;
   color: #2ab2af;
-  font-size: 20px;
-  padding-bottom: 25px;
+  font-size: 19.5px;
+  padding-bottom: 28px;
 }
 
 .card .community h3 {
   color: #c0df34;
-  font-size: 15px;
-  padding-bottom: 20px;
+  font-size: 14.5px;
+  padding-bottom: 15px;
 }
 
 .card .community p {
-  line-height: 1.75;
+  line-height: 2;
   color: #98a6bd;
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 400;
 }
 
 .card .subscription {
   background-color: #2ab2af;
-  padding: 30px 25px;
+  padding: 25px 25px 25px 25px;
 }
 
 .card .subscription h2 {
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 18.5px;
   color: white;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 }
 
 .card .subscription h3 {
@@ -75,26 +75,30 @@ body {
   color: white;
   padding-bottom: 10px;
   font-weight: 400;
+  font-size: 16px;
 }
 
 .card .subscription h3 span {
   font-weight: 700;
   padding-right: 10px;
-  font-size: 2rem;
+  font-size: 31px;
 }
 
 .card .subscription p {
+  font-size: 15.5px;
   font-weight: 400;
   color: white;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 }
 
 .card .subscription a {
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #c0df34;
-  border-radius: 10px;
+  border-radius: 5px;
   text-decoration: none;
   color: white;
   padding: 13.5px 100px;
@@ -103,13 +107,14 @@ body {
 .card .why {
   border-radius: 0 0 5px 5px;
   background-color: #4bbebc;
-  padding: 25px 25px;
+  padding: 25px 25px 20px 25px;
 }
 
 .card .why h2 {
+  font-weight: 400;
   font-size: 18px;
   color: white;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
 }
 
 .card .why ul li {
@@ -118,5 +123,11 @@ body {
   color: white;
   list-style: none;
   padding-bottom: 5px;
+}
+
+@media screen and (min-width: 1000px) {
+  .card {
+    max-width: 635px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
